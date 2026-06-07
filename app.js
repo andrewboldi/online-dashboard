@@ -9,8 +9,8 @@ const state = {
   view: "outreach",
   filters: { tier: "", specialty: "", institution_class: "", status: "", search: "" },
   doctorIndexById: new Map(),
-  doctorIndexBySpec: new Map(),
   draftsByDoctorId: new Map(),
+  doctorIndexBySpec: new Map(),
 };
 
 const STATUS_BUCKETS = {
