@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Outreach Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>Doctor Outreach <span class="region">SF Bay Area · UCSF + Stanford apex</span></h1>
+      <div class="sub" id="build-info">loading…</div>
+    </div>
+    <nav>
+      <button data-view="outreach" class="active">Outreach</button>
+      <button data-view="confirmed">Confirmed</button>
+      <button data-view="schedule">Schedule</button>
+      <button data-view="doctors">Doctors</button>
+      <button data-view="staged">📤 Staged <span id="staged-badge" class="badge" hidden></span></button>
+      <button data-view="institutions">Institutions</button>
+      <button data-view="stats">Stats</button>
+    </nav>
+  </header>
+  <main id="main"></main>
+  <div class="modal" id="modal" hidden>
+    <div class="modal-inner" id="modal-inner"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
